@@ -1,22 +1,16 @@
 const Player = {
   name: 'Player',
   mark: 'X',
-  score: 0,
 }
 
 const Computer = {
   name: 'Computer',
   mark: 'O',
-  score: 0,
 }
-
 
 const gameCon = document.querySelector(".game-container");
 const gameBoard = document.querySelector(".game-board");
 const gameWin = document.getElementById('winText');
-
-let round = 1;
-
 
 function ComputerMark() {
   let availableBoxes = Array.from(document.querySelectorAll('.game-board > div')
